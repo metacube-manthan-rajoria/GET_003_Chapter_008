@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "set PORT=8080 && node index.js",
-    "run": "node index.js -- --port 8080",
-    "run2": "node index.js",
-    "run3": "PORT=8080 node index.js",
+    "start": "node index.js",
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
