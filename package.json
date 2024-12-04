@@ -5,15 +5,16 @@
   "scripts": {
     "start": "set PORT=8080 && node index.js",
     "run": "node index.js -- --port 8080",
-    "run2": "node index.js 8080",
-    "server": "nodemon index.js 8080",
+    "run2": "node index.js",
+    "run3": "PORT=8080 node index.js",
+    "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "chalk": "^5.3.0",
+    "express": "^4.21.1",
     "figlet": "^1.8.0"
   }
 }
