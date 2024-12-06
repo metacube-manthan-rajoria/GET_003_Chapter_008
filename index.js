@@ -1,6 +1,7 @@
 const figlet = require("figlet");
+let dotenv = require('dotenv').config()
 const express = require("express");
-const port = 5000;
+const port = dotenv.PORT || 3000;
 const app = express();
 
 app.listen(port, () => {
@@ -15,7 +16,7 @@ figlet.text(
 	},
 	function (err, data) {
 		if (err) {
-			console.log("Something went wrong...");
+			console.log("Something went wrong...", err);
 			console.dir(err);
 			return;
 		}
